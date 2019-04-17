@@ -15,6 +15,10 @@
 		97E633252266BF3B003EEF68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E633242266BF3B003EEF68 /* main.m */; };
 		97E6332F2266BF3B003EEF68 /* DesignPattern_BuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E6332E2266BF3B003EEF68 /* DesignPattern_BuilderTests.m */; };
 		97E6333A2266BF3B003EEF68 /* DesignPattern_BuilderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E633392266BF3B003EEF68 /* DesignPattern_BuilderUITests.m */; };
+		97E6334A2266BF5A003EEF68 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E633492266BF5A003EEF68 /* Character.m */; };
+		97E6334D2266BF69003EEF68 /* CharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E6334C2266BF69003EEF68 /* CharacterBuilder.m */; };
+		97E633502266BF85003EEF68 /* StandardCharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E6334F2266BF85003EEF68 /* StandardCharacterBuilder.m */; };
+		97E633532266C26C003EEF68 /* ChasingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E633522266C26C003EEF68 /* ChasingGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		97E633352266BF3B003EEF68 /* DesignPattern-BuilderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DesignPattern-BuilderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E633392266BF3B003EEF68 /* DesignPattern_BuilderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignPattern_BuilderUITests.m; sourceTree = "<group>"; };
 		97E6333B2266BF3C003EEF68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97E633482266BF5A003EEF68 /* Character.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		97E633492266BF5A003EEF68 /* Character.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+		97E6334B2266BF69003EEF68 /* CharacterBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharacterBuilder.h; sourceTree = "<group>"; };
+		97E6334C2266BF69003EEF68 /* CharacterBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharacterBuilder.m; sourceTree = "<group>"; };
+		97E6334E2266BF85003EEF68 /* StandardCharacterBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StandardCharacterBuilder.h; sourceTree = "<group>"; };
+		97E6334F2266BF85003EEF68 /* StandardCharacterBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StandardCharacterBuilder.m; sourceTree = "<group>"; };
+		97E633512266C26C003EEF68 /* ChasingGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChasingGame.h; sourceTree = "<group>"; };
+		97E633522266C26C003EEF68 /* ChasingGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChasingGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,9 @@
 		97E633142266BF3A003EEF68 /* DesignPattern-Builder */ = {
 			isa = PBXGroup;
 			children = (
+				97E633472266BF41003EEF68 /* Character Builders */,
+				97E633512266C26C003EEF68 /* ChasingGame.h */,
+				97E633522266C26C003EEF68 /* ChasingGame.m */,
 				97E633152266BF3A003EEF68 /* AppDelegate.h */,
 				97E633162266BF3A003EEF68 /* AppDelegate.m */,
 				97E633182266BF3A003EEF68 /* ViewController.h */,
@@ -130,6 +145,19 @@
 				97E6333B2266BF3C003EEF68 /* Info.plist */,
 			);
 			path = "DesignPattern-BuilderUITests";
+			sourceTree = "<group>";
+		};
+		97E633472266BF41003EEF68 /* Character Builders */ = {
+			isa = PBXGroup;
+			children = (
+				97E633482266BF5A003EEF68 /* Character.h */,
+				97E633492266BF5A003EEF68 /* Character.m */,
+				97E6334B2266BF69003EEF68 /* CharacterBuilder.h */,
+				97E6334C2266BF69003EEF68 /* CharacterBuilder.m */,
+				97E6334E2266BF85003EEF68 /* StandardCharacterBuilder.h */,
+				97E6334F2266BF85003EEF68 /* StandardCharacterBuilder.m */,
+			);
+			path = "Character Builders";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97E6334D2266BF69003EEF68 /* CharacterBuilder.m in Sources */,
 				97E6331A2266BF3A003EEF68 /* ViewController.m in Sources */,
 				97E633252266BF3B003EEF68 /* main.m in Sources */,
 				97E633172266BF3A003EEF68 /* AppDelegate.m in Sources */,
+				97E633502266BF85003EEF68 /* StandardCharacterBuilder.m in Sources */,
+				97E633532266C26C003EEF68 /* ChasingGame.m in Sources */,
+				97E6334A2266BF5A003EEF68 /* Character.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
